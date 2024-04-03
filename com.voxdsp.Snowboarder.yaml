@@ -23,4 +23,4 @@ modules:
     sources:
       - type: git
         url: https://notabug.org/Vandarin/Snowboarder.git
-        commit: 2d4665e2f68584c64619c919581acb5a9a01cccd
+        commit: 5a0662743be638af643d8d38c13ad17b72ece298
