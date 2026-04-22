@@ -25,4 +25,6 @@ modules:
         url: https://github.com/mrbid/NotABug-Mirror.git
         commit: 9783867161be015ec0f46c9ec19c758716d566f0
       - type: patch
-        path: fix-missing-esAux2h-file.patch
+        paths:
+          - fix-missing-esAux2h-file.patch
+          - fix-appdata.patch
