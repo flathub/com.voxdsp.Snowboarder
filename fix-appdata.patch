@@ -1,0 +1,55 @@
+From 326260cd439590d42948f3bd0979047b985a5289 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Wed, 22 Apr 2026 15:05:12 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ Snowboarder/flatpak/snowboarder.appdata.xml | 24 +++++++++++++++++-------
+ 1 file changed, 17 insertions(+), 7 deletions(-)
+
+diff --git a/Snowboarder/flatpak/snowboarder.appdata.xml b/Snowboarder/flatpak/snowboarder.appdata.xml
+index 1f98f42..314c815 100644
+--- a/Snowboarder/flatpak/snowboarder.appdata.xml
++++ b/Snowboarder/flatpak/snowboarder.appdata.xml
+@@ -1,20 +1,30 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<application>
+-	<id type="desktop">snowboarder.desktop</id>
++<component type="desktop-application">
++	<id>snowboarder.desktop</id>
+ 	<metadata_license>CC-BY-4.0</metadata_license>
+ 	<project_license>GPL-2.0-only</project_license>
+ 	<name>Snowboarder</name>
+ 	<summary>A 3D simple snowboarding game</summary>
+ 	<description>
+ 		<p>Use your keyboard arrow keys to move from left to right or left and right click.</p>
+ 		<p>A web version is available at mrbid.github.io/snowboarder/</p>
+ 	</description>
+ 	<screenshots>
+-		<screenshot>https://camo.githubusercontent.com/bc4aacd7480c98e057a8c73e033a1766107f07dbf89757861b28e6daadf1b6a4/68747470733a2f2f64617368626f6172642e736e617063726166742e696f2f736974655f6d656469612f6170706d656469612f323032312f31322f53637265656e73686f745f323032312d31322d32315f30362d33312d32322e706e67</screenshot>
++		<screenshot type="default">
++      <image>https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9jb20vdm94ZHNwL1Nub3dib2FyZGVyLzZkNmMyMmE5M2JhZmVlODAwY2U4NjFhZDJjN2E4OGE3L3NjcmVlbnNob3RzL2ltYWdlLTFfb3JpZy5wbmc
++      </image>
++      <caption>In-game screenshot</caption>
++    </screenshot>
+ 	</screenshots>
+-	<url type="homepage">https://notabug.org/Vandarin/Snowboarder</url>
+-	<releases>
++  <url type="homepage">https://github.com/mrbid/NotABug-Mirror/</url>
++  <url type="bugtracker">https://github.com/mrbid/NotABug-Mirror/issues</url>
++  <url type="vcs-browser">https://github.com/mrbid/NotABug-Mirror/tree/main/Snowboarder</url>
++  <developer id="com.voxdsp">
++    <name>James William Fletcher</name>
++  </developer>
++  <releases>
+ 		<release version="3.0" date="2023-11-15" />
+ 	</releases>
+-	<content_rating type="oars-1.0" />
+-</application>
++  <content_rating type="oars-1.1" />
++  <launchable type="desktop-id">snowboarder.desktop</launchable>
++</component>
+--
+libgit2 1.7.2
+
